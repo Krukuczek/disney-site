@@ -6,23 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney +| Filmy i seriale</title>
     <link rel="icon" type="image/png" href="images/disneyLogo.ico" sizes="128x128">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
-        <ul id="nav-list">
-            <img src="images/logo.png" alt="disneyLogo" id="disneyLogo">
-            <span><a>STRONA GŁÓWNA</a></span>
-            <span><a>WYSZUKAJ</a></span>
-            <span><a>MOJA LISTA</a></span>
-            <span><a>ORIGINALS</a></span>
-            <span><a>FILMY</a></span>
-            <span><a>SERIALE</a></span>
+    <header class="navbar container-fluid navbar-dark navbar-expand-md">
+        <ul class="navbar-nav justify-content-sm-around">
+            <li class="nav-item">
+                <a href="#" class="nav-link"><img src="images/logo.png" alt="disneyLogo" id="disneyLogo"></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">STRONA GŁÓWNA</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">WYSZUKAJ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">MOJA LISTA</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">ORIGINALS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">FILMY</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">SERIALE</a>
+            </li>
         </ul>
-        <img src="images/avatarIcon.png" id="avatar">
-    </header>
-    <main>
+        <ul class="navbar-nav" id="avatar">
+            <li class="nav-item dropstart">
+                <a class="nav-link dropdown-item " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/avatarIcon.png">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+            </li>
+        </ul>
 
+    </header>
+
+    <main class="container d-flex flex-column gap-4">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/marvel.jpg" class="d-block w-100" alt="marvel">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/starwars.jpg" class="d-block w-100" alt="starwars">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/avatar.jpg" class="d-block w-100" alt="avatar">
+                  </div>
+                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="container d-flex flex-column gap-4">
+            <div class="d-flex justify-content-between">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        <h5>Nowości w Disney+</h5>
+        <div class="container">
+
+        </div>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
