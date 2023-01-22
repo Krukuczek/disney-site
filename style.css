@@ -35,3 +35,8 @@ li{
 .carousel-indicators{
     justify-content: flex-end;
 }
+.nav-item a{
+    align-items: center;
+    gap:5px;
+    cursor: pointer;
+}
