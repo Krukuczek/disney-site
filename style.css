@@ -52,3 +52,6 @@ li{
     gap:5px;
     cursor: pointer;
 }
+.reverseColor{
+    filter: invert(100%);
+}
